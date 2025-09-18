@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Livros - Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Biblioteca Digital</h1>
+            <p>Pesquise por título da obra ou nome do autor</p>
+        </header>
+        <main>
+            <div class="search-box">
+                <input type="text" id="caixaDeBusca" placeholder="Ex: Machado de Assis ou 1984">
+                <button id="botaoDeBusca">Buscar</button>
+            </div>
+
+            <div id="resultados">
+            </div>
+            <div class="add-box">
+                <h2>Adicione um livro</h2>
+                <label for="titulo">Titulo:</label>
+                <input type="text" id="tituloLivro" name="titulo">
+
+                <label for="ano_publicacao">Ano de publicação: </label>
+                <input type="text" id="anoLivro" name="ano_publicacao">
+
+                <label for="genero">Genero: </label>
+                <input type="text" id="generoLivro" name="genero">
+
+                <button id="botaoAdicionar" onclick="botaoAdicionar">Adicionar</button>
+            </div>
+
+            <button id="botaoListarAutores">Listar todos os autores</button>
+            <ul id="listaAutores"></ul>
+            <div id="mensagemFeedback" class="mensagem-feedback"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
